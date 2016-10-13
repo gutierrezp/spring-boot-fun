@@ -49,7 +49,7 @@ public class TestController {
 		return personList;
 	}
 	
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/rest/persona/{id}", method = RequestMethod.GET)
     public Person getPersonById(@PathVariable("id") int id){
         Person person = new Person(id,"",0.0);
 		return this.personService.getPerson(person);
