@@ -55,9 +55,19 @@ public class TestController {
 		return this.personService.getPerson(person);
     }
 	
-	@RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void deleteStudentById(@RequestBody Person person){
-        //this.personService.updateStudent(person);
+	@RequestMapping(value = "/rest/delete",method = RequestMethod.DELETE, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void deletePerson(@RequestBody Person person){
+        this.personService.removePerson(person);
+    }
+	
+	@RequestMapping(value = "/rest/add",method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void addPerson(@RequestBody Person person){
+        this.personService.addPerson(person);
+    }
+	
+	@RequestMapping(value = "/rest/update",method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void updatePerson(@RequestBody Person person){
+        this.personService.updatePerson(person);
     }
 
 	/**

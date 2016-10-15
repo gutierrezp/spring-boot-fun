@@ -57,4 +57,32 @@ public class PersonDaoFakeImpl implements PersonDao {
 		return result;
 	}
 
+	@Override
+	public Person removePerson(Person person) {
+		Person result = null;
+		if(persons!=null){
+			result = persons.remove(person)?person:null;
+		}
+		return result;
+	}
+
+	@Override
+	public Person updatePerson(Person person) {
+		Person result = null;
+		if(persons!=null && persons.contains(person)){
+			persons.set(persons.indexOf(person), person);
+		}
+		return result;
+	}
+	
+	@Override
+	public Person addPerson(Person person) {
+		Person result = null;
+		if(persons!=null && !persons.contains(person)){
+			persons.add(person);
+		}
+		result = persons.contains(person)?person:null;
+		return result;
+	}
+
 }

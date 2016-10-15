@@ -26,5 +26,17 @@ public class PersonService {
 	public Person getPerson (Person person){
 		return this.personDao.getPerson(person);
 	}
+	
+	public Person addPerson (Person person){
+		return this.personDao.addPerson(person);
+	}
+	
+	public Person updatePerson (Person person){
+		return this.personDao.updatePerson(person);
+	}
+	
+	public Person removePerson (Person person){
+		return this.personDao.removePerson(person);
+	}
 
 }
