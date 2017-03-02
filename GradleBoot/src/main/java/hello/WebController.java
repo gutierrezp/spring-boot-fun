@@ -30,6 +30,8 @@ public class WebController extends WebMvcConfigurerAdapter {
             return "form";
         }
 
-        return "redirect:/results";
+//        return "redirect:/results";
+        return "results";
+//        return "results2";
     }
 }
