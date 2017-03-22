@@ -1,4 +1,4 @@
-package hello;
+package com.arise.model;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;

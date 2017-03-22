@@ -1,4 +1,4 @@
-package hello;
+package com.arise.service;
 
 import org.springframework.stereotype.Service;
 

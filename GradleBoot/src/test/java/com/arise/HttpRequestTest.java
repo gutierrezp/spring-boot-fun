@@ -1,4 +1,4 @@
-package hello;
+package com.arise;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
