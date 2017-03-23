@@ -11,6 +11,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
 
 bootRun {
     addResources = true
@@ -33,4 +34,5 @@ dependencies {
     testCompile("junit:junit")
     testCompile("org.springframework.boot:spring-boot-starter-test")
     compile("net.sourceforge.nekohtml:nekohtml:1.9.22")
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
