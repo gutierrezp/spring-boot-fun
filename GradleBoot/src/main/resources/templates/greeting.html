@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/greeting.js"></script>
+</head>
+<body>
+    <p id="hello" th:text="'Hello, ' + ${name} + '!'" />
+    <p>profesional xp</p>
+    <ul>
+    	<li>Had an issue when running gradle build. Tests were wrong because they didn't much the package of java/main. I changed initially the packages in java/main but didn't changed the corresponding test classes packages in test/java....issues.</li>
+    	<li>AngularJs wouldn't work with thymeleaf as it was configured by default. Had to add the property spring.thymeleaf.mode=LEGACYHTML5 in applications.properties which I had to create and place under src/main/resoources. I also had to add a compile dependency in the build.gradle file</li>
+    	<li>Added in Application class "extends something" and a method (protected) to make this project deployable to an external tomcat and added "providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'" in the dependencies section of build.gradle</li>
+    </ul>
+</body>
+</html>

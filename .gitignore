@@ -1,0 +1,16 @@
+.metadata
+.recommenders
+RemoteSystemsTempFiles
+generic-gradle
+boot-fun/.settings
+boot-fun/bin
+boot-fun/target
+boot-fun/.classpath
+boot-fun/.project
+GradleBoot/.settings
+GradleBoot/bin
+GradleBoot/target
+GradleBoot/.classpath
+GradleBoot/.project
+GradleBoot/.gradle
+GradleBoot/build
